@@ -1,203 +1,203 @@
 :root {
-    /*:: COLORS ::*/
-    --red: #FF0000;
-    --orange: #F87205;
-    --midOrange: #FF9933;
-    --yellow: #FFCC00;
-    --white: #FFFFFF;
-    --black: #2f3640;
-    --body: #f8f8fa;
+  /*:: COLORS ::*/
+  --red: #ff0000;
+  --orange: #f87205;
+  --midOrange: #ff9933;
+  --yellow: #ffcc00;
+  --white: #ffffff;
+  --black: #2f3640;
+  --body: #f8f8fa;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /******************* HEADER STYLES ********************/
 
 header {
-    background-color: #000000c9;
-    position: fixed;
-    z-index: 20;
+  background-color: #000000c9;
+  position: fixed;
+  z-index: 20;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav img {
-    width: 20%;
-    margin-left: 30px;
+  width: 20%;
+  margin-left: 30px;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 30px;
-    cursor: pointer;
-    color: white;
+  display: inline-block;
+  margin: 30px;
+  cursor: pointer;
+  color: white;
 }
 
 /******************* MAIN STYLES ********************/
 .container-background {
-    width: 100%;
-    height: 100vh;
-    background-image: url(/assets/img/main-image.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/main-image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .main-information {
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-information h1 {
-    font-family: 'Barlow Condensed',
-        sans-serif;
-    color: white;
-    font-size: 70px;
-    text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+  font-size: 70px;
+  text-align: center;
 }
 
 .main-information p {
-    color: white;
+  color: white;
 }
 
 .projects-information {
-    background-color: #fafafa;
-    height: 600px;
-    padding: 40px;
+  background-color: #fafafa;
+  height: 600px;
+  padding: 40px;
+}
+
+.projects-information.projects-information-products {
+    height: 900px;
 }
 
 .projects-information-desc {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .projects-information-desc h2 {
-    font-family: 'Barlow Condensed',
-        sans-serif;
-    font-weight: 800;
-    letter-spacing: 1px;
-    font-size: 40px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 40px;
 }
 
 .projects-information-desc p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #999;
-    margin-left: 50px;
-    position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #999;
+  margin-left: 50px;
+  position: relative;
 }
 
 .projects-information-desc p::before {
-    position: absolute;
-    content: '';
-    height: 25px;
-    width: 2px;
-    background-color: #002d7c;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: -23px;
-    top: 14px;
-
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 2px;
+  background-color: #002d7c;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: -23px;
+  top: 14px;
 }
-.main-services-provided{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: -170px;
-}
-
-.card-service{
-    width: 380px;
-    height: 340px;
-    box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
-    background-color: #ffffff;
-    padding: 3rem;
+.main-services-provided {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -170px;
 }
 
-.card-service .logo img{
-        height: 5rem;
-        width: 5rem;
+.card-service {
+  width: 380px;
+  height: 340px;
+  box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
+  background-color: #ffffff;
+  padding: 3rem;
 }
 
-.card-service .title{
-    font-size: 24px;
-    margin-bottom: 1rem !important;
+.card-service .logo img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.card-service .title {
+  font-size: 24px;
+  margin-bottom: 1rem !important;
 }
 
 .card-service .description {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        color: #999;
-        margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #999;
+  margin-bottom: 0;
 }
 /******************* FOOTER STYLES ********************/
 footer {
-    background-color: #ffffff;
-    width: 100%;
-    padding: 30px;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 30px;
 }
 
 .footer-content-column {
-    width: fit-content;
+  width: fit-content;
 }
 
 .footer-content-column img {
-    height: auto;
-    max-width: 280px;
+  height: auto;
+  max-width: 280px;
 }
 
 .footer-link {
-    text-decoration: none;
-    font-weight: 400;
-    line-height: 24px;
-    color: #999;
-    margin: 10px;
-    display: flex;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 24px;
+  color: #999;
+  margin: 10px;
+  display: flex;
 }
 
 .footer-link p {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .footer-link p:hover {
-    color: #002d7c;
+  color: #002d7c;
 }
 
 .footer-copy {
-    width: 100%;
-    height: 50px;
-    background-color: #fafafa;
-    font-family: 'Poppins',
-        sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #999;
+  width: 100%;
+  height: 50px;
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999;
 }
 
 .footer-copy p {
-    margin-left: 60px;
-    margin-top: 27px;
+  margin-left: 60px;
+  margin-top: 27px;
 }
