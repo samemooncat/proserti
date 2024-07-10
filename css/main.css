@@ -86,7 +86,7 @@ nav ul li {
 }
 
 .projects-information.projects-information-products {
-    height: 900px;
+  height: 900px;
 }
 
 .projects-information-desc {
@@ -152,6 +152,12 @@ nav ul li {
   line-height: 24px;
   color: #999;
   margin-bottom: 0;
+}
+
+.projects-info-images {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
 }
 /******************* FOOTER STYLES ********************/
 footer {
